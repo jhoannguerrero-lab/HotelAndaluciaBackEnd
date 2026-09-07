@@ -1,4 +1,7 @@
 backend/target/
 frontend/node_modules/
+target/
+.idea/
+*.iml
 .env
 .DS_Store
