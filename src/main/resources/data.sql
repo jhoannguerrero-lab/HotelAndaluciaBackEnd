@@ -1,3 +1,11 @@
+--   admin@hotelandalucia.com      / Gestor123!    (rol GESTOR)
+--   recepcion@hotelandalucia.com  / Consulta123!  (rol CONSULTA)
+-- Los hashes de abajo son BCrypt de esas contrasenas.
+-- =========================================================
+INSERT IGNORE INTO usuarios (id, nombre_completo, email, password_hash, rol, created_at) VALUES
+(1, 'Administrador General', 'admin@hotelandalucia.com', '$2b$10$lmhm2mjnz8wJeYM02CnjcuuOFp6lXriyOWcw6nwk6ZIz846nRWiEC', 'GESTOR', NOW()),
+(2, 'Recepcion Turno Manana', 'recepcion@hotelandalucia.com', '$2b$10$N/CbpmgMJJlvS6PCSXkZMOLZAE40cznEYuv/o3lEiSX69Fej7lySS', 'CONSULTA', NOW());
+
 
 INSERT IGNORE INTO habitaciones (id, numero, tipo, piso, capacidad, precio_noche, estado, created_at) VALUES
 (1, '101', 'INDIVIDUAL', 1, 1, 220.00, 'OCUPADA', NOW()),
